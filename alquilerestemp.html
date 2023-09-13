@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" href="normalize.css" as="style">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="barra_superior">
+
+            <section class="logo1">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-skyscraper" width="84" height="84" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l18 0" />
+                    <path d="M5 21v-14l8 -4v18" />
+                    <path d="M19 21v-10l-6 -4" />
+                    <path d="M9 9l0 .01" />
+                    <path d="M9 12l0 .01" />
+                    <path d="M9 15l0 .01" />
+                    <path d="M9 18l0 .01" />
+                </svg>
+                
+            </section>
+            <section class="link_inicio">
+                <a href="index.html">
+
+                    <h1  class="nombre_empresa">Empresa <span>Sociedad anonima</span></h1>
+                </a>
+            </section>
+        </div>
+    </header>
+
+
+    <div class="nav_background">
+        <nav class="navegacion_principal contenedor">
+            <a href="login.html">Iniciar Sesión</a>
+            <a href="#">Ofertas Destacadas</a>
+            <a href="#">Tu ubicación</a>
+            
+        </nav>
+    </div>
+
+    <main class="contenido_form">
+            <div>
+
+                <h2>Alquileres Temporales</h2>
+            </div>
+            <div class="formulario_temp sombra">
+                <section>
+
+               
+
+                <form action="#" method="post">
+                <label for="lugar_interes">Lugar de Interés:</label><br>
+                <input type="search" id="lugar_interes" name="lugar_interes" placeholder="Donde quieres ir?"><br><br>    
+                <label for="llegada">Llegada:</label><br>
+                <input type="date" id="llegada" name="llegada" required><br><br>
+            
+                <label for="salida">Salida:</label><br>
+                <input type="date" id="salida" name="salida" required><br><br>
+          
+                <label for="habitacion">Habitación:</label><br>
+                <input type="number" id="habitacion" name="habitacion" placeholder="Cantidad de Habitaciones" required><br><br>
+          
+                <label for="huesped">Huéspedes:</label><br>
+                <input type="number" id="huesped" name="huesped" placeholder="Cantidad de Huéspedes" required><br><br>
+          
+                <label for="presupuesto">Presupuesto por Noche:</label><br>
+                <input type="range" id="presupuesto" name="presupuesto" required><br><br>
+                
+                <label for="tipo_hospedaje">Tipo de Hospedaje:</label><br>
+                <select id="tipo_hospedaje" name="tipo_hospedaje" required>
+                <option value="hotel">Hotel</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="casa">Casa</option>
+                 </select><br><br>
+            
+                <label for="puntuacion">Puntuación:</label><br>
+                <input type="range" id="puntuacion" name="puntuacion" min="1" max="10" required><br><br>
+            <div class="botones_form">
+
+                <input type="submit" value="Buscar">
+            </div>
+                </section>
+            <section class="base_de_datos">
+                <p>Sección para la base de datos....</p>
+            </section>
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <section>
+        <p>Siguenos en nuestras redes</p>
+        <div class="redes">
+
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M16.5 7.5l0 .01" />
+                </svg>
+                
+            </a>
+            
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                    <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" />
+                </svg>
+            </a>
+        
+        <a href="#">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+            </svg>
+        </a>
+        
+        </div>
+        </section>
+
+        <section class="footer_derecha">
+            <p>terminos y condiciones</p>
+            <p>lasbldbas</p>
+            <p>jnfdkjnskf</p>
+        </section>
+    </footer>
+    
+</body>
+</html>
+
+
+

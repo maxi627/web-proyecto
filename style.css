@@ -1,0 +1,230 @@
+#logo1 {
+    float: left;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif; /*Le cambiamos la fuente al texto */
+    /*Las propiedades que pongamos en el body se aplican para todo el documento*/
+    
+     /*Hacemos un degrades*/
+     background-image: linear-gradient(to top, gray 0%, #ffffff 80%);
+
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+
+.link_inicio a{
+    text-decoration: none;
+}
+
+.nombre_empresa span{
+    font-size: 2rem;
+}
+ 
+.barra_superior{
+    display: flex;
+    background-image:url(encabezado.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+.contenedor{     /*Navegacion*/
+    margin: 0 auto; 
+    /*Ajustamos los margenes*/
+}
+
+.nav_background{ /*Navegacion*/
+    background-color:blueviolet; /*le ponemos un color al fondo*/
+}
+
+.navegacion_principal{ /*Navegacion*/
+    display: flex; /*Habilitamos un flex*/
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 768px) {    /*Navegacion mq*/  
+    .navegacion_principal{
+        flex-direction: row;
+        justify-content: space-around; /*con esta propiedad del flex, centramos los botones de la barra*/
+        
+    }
+}
+
+
+
+.navegacion_principal a{
+    color:blanchedalmond;   /*Le cambiamos el color al texto de los enlaces*/
+    text-decoration: none;  /*Quitamos el subrayado que viene por defecto*/
+    font-size: 2rem; /*Agrandamos el texto*/
+    font-weight: bold; /*Los ponemos en negrita*/
+    padding: 1rem;  /*Engordamos el tamaño del boton*/
+}
+ 
+
+.navegacion_principal a:hover{ /*Le damos el efecto de iluminacion al tocar la nav*/
+    background-color:dimgrey;
+    color:black;
+}
+
+
+
+/* Estilos para cada sección */
+.secciones {
+    display: flex; /* Hace que las secciones se coloquen en línea */
+    flex-direction: column;
+    flex: 1; /* Hace que ambas secciones ocupen el mismo ancho */
+    margin: 0 auto ; /* Margen externo para separar las secciones */
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 768px) {
+    .secciones{ 
+    flex-direction: row;
+    height:450px;
+    justify-content: space-around;
+}
+}
+.imagen1{
+    background-image: url(imagen1.webp);
+    background-repeat: no-repeat;
+}
+.imagen2{
+    background-image: url(imagen22.webp);
+    background-repeat: no-repeat;
+}
+
+
+
+
+.secciones section a{
+    background-color:gray;
+    color:brown;
+    padding: 1rem 3rem; /*Le damos sus dimensiones al boton*/
+    margin-top: 1rem; /*aumentamos  el margen superior*/
+    font-size: 2rem; /*Agrandamos la fuente*/
+    text-decoration: none; /*quitamos el subrayado por defecto*/
+    text-transform: uppercase; /*Ponemos el texto en mayusculas*/
+    font-weight: bold; /*Lo ponemos en  negrita*/
+    border-radius: .5rem; /*redondeamos las esquinas del boton*/
+    width: 90%;
+    }
+.secciones section div :hover{
+    background-color:#d6d2d6;
+}
+
+.sombra{
+    -webkit-box-shadow: 1px 2px 13px 3px rgba(0,0,0,0.49);
+    -moz-box-shadow: 1px 2px 13px 3px rgba(0,0,0,0.49);
+    box-shadow: 1px 2px 13px 3px rgba(0,0,0,0.49);
+    padding: 3rem; 
+    border-radius:1rem; /*Redondeamos las esquinas*/
+    margin: 3rem auto;
+    width: 90%;
+}
+    
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0rem  1rem ;
+    font-weight: bold;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem;
+}
+
+
+.contenido_form{
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 100%;
+    
+}
+
+.formulario_temp{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align:left;
+	width:90rem;
+	padding:16px;
+	border-radius:10px;
+	margin:1rem auto;
+	background-color:#ccc;
+}
+.formulario_temp input {
+    width: 40rem;
+    border-radius: 5px;
+    border:1px;
+}
+
+.base_de_datos{
+    text-align: center;
+    background-image:url(base.webp);
+    background-repeat: no-repeat;
+    margin-top: 5rem;
+}
+
+.formulario_login{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    margin-bottom: 5rem;
+
+}
+.login{    
+    text-align:center;
+	width:60rem;
+	padding:1rem;
+	border-radius:10px;
+	margin:2rem auto;
+	background-color:#ccc;
+}
+
+.formulario_login input{
+    width: 55rem;
+    margin-top: 1rem;
+    border-radius:5px;
+    border: 1px;
+}
+
+.botones_form input{
+    border-radius:10px;
+    width: 20rem;
+    font-weight: bold; 
+}
+.botones_form :hover{
+    background-color:rgb(224, 182, 182);
+    color:darkslategrey;
+    color:black;
+}
